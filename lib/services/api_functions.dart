@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:machers_task/constants/api_constants.dart';
 
@@ -11,7 +9,6 @@ class ApiFunctions {
   ) async {
     String url = base_api + api_key;
     var response = await ApiHelper().getTypeGet(context, url);
-    log(response.toString());
     return response;
   }
 }

@@ -9,7 +9,7 @@ class ApiHelper {
   Xml2Json xml2json = Xml2Json();
 
   //All Get type request will handle here
-  getTypeGet(BuildContext context, String url) async {
+  Future<void> getTypeGet(BuildContext context, String url) async {
     var client = http.Client();
     var jsonMap;
     try {
